@@ -10,6 +10,11 @@
         "host" : "HOSTNAME",
         "port" : "1234"
     },
+    "GameServer" : {
+        "httpPort" : "1234",
+        "httpsPort" : "1234",
+        "AuthURL" : "https://HOSTNAME:PORT" 
+    },
     "SSL" : {
         "key" : "PATH_TO_KEY",
         "cert" : "PATH_TO_CERT",
