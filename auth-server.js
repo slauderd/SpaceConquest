@@ -9,14 +9,15 @@ var app = express();
 
 ////////////////////////////////////////////////////////////////////////////////
 // globals
-var host = "www.xadb.com";
-var port = 8444;
+var host = config.AuthServer.host;
+var port = config.AuthServer.port;
+
 var authorized_users = [];
 
 var sslOptions = {
-  key: fs.readFileSync('./ssl/server.key'),
-  cert: fs.readFileSync('./ssl/server.crt'),
-  ca: fs.readFileSync('./ssl/ca.crt'),
+  key: fs.readFileSync(config.SSL.key),
+  cert: fs.readFileSync(config.SSL.cert),
+  ca: fs.readFileSync(config.SSL.ca),
   requestCert: true,
   rejectUnauthorized: false
 };
