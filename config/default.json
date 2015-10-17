@@ -5,5 +5,14 @@
         "user"     : "DBUSER",
         "password" : "DBPASSWORD",
         "database" : "DB"
+    },
+    "AuthServer" : {
+        "host" : "HOSTNAME",
+        "port" : "1234"
+    },
+    "SSL" : {
+        "key" : "PATH_TO_KEY",
+        "cert" : "PATH_TO_CERT",
+        "ca" : "PATH_TO_CA"
     }
 }
